@@ -1,7 +1,7 @@
 <# ::
 @echo off
 
-::set "DEBUG=true"
+set "DEBUG=true"
 
 ::https://learn.microsoft.com/en-us/dotnet/api/system.consolekey
 :: The key that is used to toggle the click on and off
@@ -35,9 +35,9 @@ goto list
 :banner
 cls
 echo [?25l%logocolor% __   __   _    _ 
-echo  \ \ / /__(_)__| |
-echo   \ V / _ \ / _` |
-echo    \_/\___/_\__,_| [0mlite 1.0
+echo  \ \ / /__(_)__^| ^|
+echo   \ V / _ \ / _` ^|
+echo    \_/\___/_\__,_^| [0mlite 1.0
 echo.
 goto :eof
 
@@ -563,7 +563,8 @@ namespace n$namespace
 					using (StreamReader sr = File.OpenText(path)) {
 						string s;
 						while ((s = sr.ReadLine()) != null) {
-							if (Int32.TryParse(s, out int num) && num > 0) {
+							int num;
+							if (Int32.TryParse(s, out num) && num > 0) {
 								currentList.Add(num);
 							}
 						}
