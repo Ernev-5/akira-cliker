@@ -1,0 +1,18 @@
+           This is the tutorial for free claude code
+############################################################################################################################################ 
+First step you Need an 3 day + GitHub Account, then go to the link below: https://agentrouter.org/register?aff=EgQe to Register, there you go, create your first api key, to use it in claude code:
+
+Windows PowerShell: irm https://claude.ai/install.ps1 | iex
+Windows CMD: curl -fsSL https://claude.ai/install.cmd -o install.cmd && install.cmd && del install.cmd
+Linux etc: curl -fsSL https://claude.ai/install.sh | bash
+
+if installed we Need too set the api key and the base url
+
+Linux
+echo 'export ANTHROPIC_API_KEY="api-key"' >> ~/.bashrc
+echo 'export ANTHROPIC_BASE_URL="https://agentrouter.org"' >> ~/.bashrc
+source ~/.bashrc
+
+Windows Powershell:
+[System.Environment]::SetEnvironmentVariable("ANTHROPIC_API_KEY", "api-key", "User")
+[System.Environment]::SetEnvironmentVariable("ANTHROPIC_BASE_URL", "https://agentrouter.org", "User")
