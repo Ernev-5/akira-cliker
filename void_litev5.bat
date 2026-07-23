@@ -1,7 +1,7 @@
 <# ::
 @echo off
 
-set "DEBUG=true"
+::set "DEBUG=true"
 
 ::https://learn.microsoft.com/en-us/dotnet/api/system.consolekey
 :: Il tasto per attivare/disattivare il clicker (\ = Oem5)
